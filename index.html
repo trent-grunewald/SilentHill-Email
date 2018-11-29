@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <style type="text/css">
+body {
+	Margin: 0!important;
+	padding: 15px;
+	background-color: #FFF;
+}
+.wrapper {
+	width: 100%;
+	table-layout: fixed;
+}
+.wrapper-inner {
+	width: 100%;
+	background-color: #000;
+	max-width: 670px;
+  Margin: 0 auto;
+  border: 5px solid #4c7579;
+}
+table {
+	border-spacing: 0;
+	font-family: sans-serif;
+	color: #727f80;
+}
+.outer-table {
+	width: 100%;
+	max-width: 670px;
+	margin: 0 auto;
+	background-color: #000;
+}
+td {
+    padding: 0;
+}
+.header {
+  background-color: #000000;
+  background: url(img/header.jpg)center center no-repeat;
+  height: 80px;
+}
+p {
+    Margin:0;
+}
+.quote p{
+  text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    font-weight: 600;
+    color: #bbbbba;
+    font-style: italic;
+    font-size: 1.25em;
+    padding: 30px 0;
+}
+a {
+    color: #F1F1F1;
+    text-decoration: none;
+}
+/*--- End Outer Table 1 --*/
+.main-table-first {
+  background: url(img/jamesHeader.jpg)center center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 250px;
+  margin-top: 30px;
+}
+/*--- Start Two Column Sections --*/
+.two-column {
+    text-align: center;
+    font-size: 0;
+    padding: 5px 0 10px 0;
+}
+.two-column .section {
+    width: 100%;
+    max-width: 300px;
+    display: inline-block;
+    vertical-align: top;
+}
+.two-column .content {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: justify;
+}
+.content {
+    width: 100%;
+    padding-top: 20px;
+}
+.center {
+    display: table;
+    Margin: 0 auto;
+}
+img {
+    border: 0;
+}
+img.logo {
+    float: left;
+    Margin-left: 5%;
+    max-width: 200px!important;
+}
+#callout {
+    float: right;
+    Margin: 4% 5% 2% 0;
+    height: auto;
+    overflow: hidden;
+}
+#callout img {
+    max-width: 20px;
+}
+.social {
+    list-style-type: none;
+    Margin-top: 1%;
+    padding: 0;
+}
+.social li {
+    display: inline-block;
+}
+.social li img {
+    max-width: 15px;
+    Margin-bottom: 0;
+    padding-bottom: 0;
+}
+/*--- Start Outer Table Banner Image, Text & Button --*/
+.image{
+  background: linear-gradient(black, #ff000000, #ff000000),url(http://www.silenthillmemories.net/sh2/wallpapers/pics/sh2_18_1024.jpg)center center no-repeat;
+    height: 400px;
+    background-size: cover;
+}
+.main-table {
+    width: 100%;
+    max-width: 610px;
+    margin: 0 auto;
+    background-color: #FFF;
+    border-radius: 6px;
+}
+.one-column .inner-td {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: justify;
+}
+.inner-td {
+    padding: 10px;
+}
+.h2 {
+    text-align: center;
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 45px;
+    Margin: 12px;
+    color: #4A4A4A;
+}
+p.center {
+    text-align: center;
+    max-width: 580px;
+    line-height: 24px;
+}
+.button-holder-center {
+    text-align: center;
+    Margin: 5% 2% 3% 0;
+}
+.button-holder {
+    float: right;
+    Margin: 5% 0 3% 0;
+}
+.btn {
+    font-size: 15px;
+    font-weight: 600;
+    background: #81BAC6;
+    color: #FFF;
+    text-decoration: none;
+    padding: 9px 16px;
+    border-radius: 28px;
+}
+/*--- Start Two Column Image & Text Sections --*/
+.two-column img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+}
+.two-column .text {
+    padding: 10px 0;
+}
+/*--- Start 3 Column Image & Text Section --*/
+.outer-table-2 {
+	width: 100%;
+	max-width: 670px;
+	margin: 22px auto;
+	background-color: #C2C1C1;
+    border-bottom: 3px solid #81B9C3;
+    border-top: 3px solid #81B9C3;
+}
+.three-column {
+    text-align: center;
+    font-size: 0;
+    padding: 10px 0 30px 0;
+}
+.three-column .section {
+    width: 100%;
+    max-width: 200px;
+    display: inline-block;
+    vertical-align: top;
+}
+.three-column .content {
+    font-size: 16px;
+    line-height: 20px;
+}
+.three-column img {
+    width: 100%;
+    max-width: 125px;
+    height: auto;
+}
+.outer-table-2 p {
+	margin-top: 6px;
+	color: #FFF;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 23px;
+}
+/*--- Start Two Column Article Section --*/
+.outer-table-3 {
+    width: 100%;
+    max-width: 670px;
+    margin: 22px auto;
+    background-color: #C2C1C1;
+    border-top: 3px solid #81B9C3;
+}
+.h3 {
+	text-align: center;
+	font-size: 21px;
+	font-weight: 600;
+	Margin-bottom: 8px;
+	color: #4A4A4A;
+}
+/*--- Start Bottom One Column Section --*/
+.inner-bottom {
+	padding: 22px;
+}
+.h1 {
+    text-align: center!important;
+    font-size: 25px!important;
+    font-weight: 600;
+    line-height: 45px;
+    Margin: 12px 0 20px 0;
+    color: #4A4A4A;
+}
+.inner-bottom p {
+	font-size: 16px;
+	line-height: 24px;
+	text-align: justify;
+}
+/*--- Start Footer Section --*/
+.footer {
+	width: 100%;
+	background-color: #C2C1C1;
+	Margin: 0 auto;
+    color: #FFF;
+}
+.footer  img {
+	max-width: 135px;
+	Margin: 0 auto;
+	display: block;
+	padding: 4% 0 1% 0;
+}
+p.footer {
+	text-align: center;
+	color: #FFF!important;
+	line-height: 30px;
+	padding-bottom: 4%;
+    text-transform: uppercase;
+}
+/*--- Media Queries --*/
+@media screen and (max-width: 400px) {
+	.h1 {
+		font-size: 22px;
+	}
+	.two-column .column, .three-column .column {
+		max-width: 100%!important;
+	}
+	.two-column img {
+		width: 100%!important;
+	}
+	.three-column img {
+		max-width: 60%!important;
+	}
+}
+@media screen and (min-width: 401px) and (max-width: 400px) {
+
+	.two-column .column {
+		max-width: 50%!important;
+	}
+	.three-column .column {
+		max-width: 33%!important;
+}
+}
+@media screen and (max-width:768px) {
+img.logo {
+	float:none !important;
+	margin-left:0% !important;
+	max-width: 200px!important;
+}
+
+#callout {
+	float:none !important;
+	margin: 0% 0% 0% 0;
+	height: auto;
+	text-align:center;
+	overflow: hidden;
+}
+#callout img {
+    max-width:26px !important; 
+}
+.two-column .section {
+	width: 100% !important;
+	max-width: 100% !important;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.two-column img {
+	width: 100% !important;
+ 	height: auto !important;
+}
+img.img-responsive {
+    width:100% !important;
+    height:auto !important;
+    max-width:100% !important;
+}
+.content {
+	width: 100%;
+	padding-top:0px !important;
+}
+}
+  </style>
+</head>
+<body>
+    <div class="wrapper">
+      <div class="wrapper-inner">
+        <table class="outer-table">
+          <tr>
+            <td class="header">
+              <p></p>
+          </tr>
+        </table><!--End outer table-->
+        <table class="main-table-first">
+          <tr>
+          </tr>
+        </table><!--End Main-Table-First-->
+        <table class="outer-table">
+            <tr>
+                <td class="quote">
+                  <p>"In my restless dreams, I see that town... Silent Hill. You promised you'd take me there again some day... but you never did. Well, I'm alone there now, in our special place... waiting for you."</p>
+                </td>
+              </tr>
+          <tr>
+            <td class="image">
+            </td>
+          </tr>
+        </table><!--End Banner Image-->
+        <table class="main-table">
+          <tr>
+            <td class="one-column">
+              <table width="100%">
+                <tr>
+                  <td class="inner-td">
+                    <p class="h2">Weekly Newsletter</p>
+                    <p class="center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, dolore, non illum veniam sequi nisi quaerat reprehenderit quidem quia tempore distinctio consequuntur accusantium commodi! Corrupti cum expedita magnam nam debitis.</p>
+                    <p class="button-holder-center"><a href="#" class="center">Find in stores!</a></p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr><!--End Heading, Paragraph-->
+          <tr>
+              <td class="two-column">
+                <div class="section">
+                  <table width = "100%">
+                    <tr>
+                      <td class="inner-td">
+                        <table class="content">
+                          <tr>
+                            <td>
+                              <img src="img/lips2.jpg" alt="red and gold lipstick" class="img-responsive">
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="text">
+                              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa ratione velit vitae animi veniam ex quae id atque repellat, aperiam a ipsum ut voluptatibus ab cumque eaque harum ipsam exercitationem!</p>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </div><!--End First Column-->
+                <div class="section">
+                    <table width = "100%">
+                        <tr>
+                            <td class="inner-td">
+                              <table class="content">
+                                <tr>
+                                  <td>
+                                    <img src="img/lips2.jpg" alt="red and gold lipstick" class="img-responsive">
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="text">
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa ratione velit vitae animi veniam ex quae id atque repellat, aperiam a ipsum ut voluptatibus ab cumque eaque harum ipsam exercitationem!</p>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                    </table>
+                  </div><!--End Second Column-->
+                </td>
+              </tr><!--End Two Column Section-->
+        </table><!--End Main-Table-->
+        <table class="outer-table-2">
+          <tr>
+            <td class="three-column">
+              <div class="section">
+                <table width="100%">
+                  <tr>
+                    <td class="inner-td">
+                      <table class="content">
+                        <tr>
+                          <td>
+                            <img src="img/lips3.jpg" alt="">
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div><!--End 1 of 3-->
+              <div class="section">
+                <table width="100%">
+                  <tr>
+                    <td class="inner-td">
+                      <table class="content">
+                        <tr>
+                          <td>
+                            <img src="img/lips4.jpg" alt="">
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div><!--End 2 of 3-->
+              <div class="section">
+                <table width="100%">
+                  <tr>
+                    <td class="inner-td">
+                      <table class="content">
+                        <tr>
+                          <td>
+                            <img src="img/lips.jpg" alt="">
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div><!--End 3 of 3-->
+            </td><!--End Three Column Section-->
+          </tr>
+        </table><!--End Outer Table 2-->
+        <table class="main-table">
+          <tr>
+            <td class="two-column">
+              <div class="section">
+                <table width="100%">
+                  <tr>
+                    <td class="inner-td">
+                        <table class="content">
+                            <tr>
+                              <td>
+                                <img src="img/lips2.jpg" alt="">
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="text">
+                                <p class="h3">Article Content</p>
+                                <p class="h3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, omnis eius. Nesciunt aperiam tempora, eos atque voluptatum molestiae praesentium.</p><br>
+                                <p class="h3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, omnis eius. Nesciunt aperiam tempora, eos atque voluptatum molestiae praesentium.</p><br>
+                              </td>
+                            </tr>
+                          </table>
+                    </td>
+                  </tr>
+                </table>
+              </div><!--End First Column-->
+              <div class="section">
+                <table width="100%">
+                  <tr>
+                    <td class="inner-td">
+                        <table class="content">
+                            <tr>
+                              <td class="text">
+                                <p class="h3">Article Content</p>
+                                <p class="h3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, omnis eius. Nesciunt aperiam tempora, eos atque voluptatum molestiae praesentium.</p>
+                                <br>
+                                <p class="h3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, omnis eius. Nesciunt aperiam tempora, eos atque voluptatum molestiae praesentium.</p><br>
+                              </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                  <img src="img/lips.jpg" alt="">
+                                </td>
+                              </tr>
+                          </table>
+                    </td>
+                  </tr>
+                </table>
+              </div><!--End Second Column-->
+            </td>
+          </tr>
+          <tr>
+            <td class="one-column">
+              <table width="100%">
+                <tr>
+                  <td class="inner-bottom">
+                    <p class="h1">Loren Ipsum</p>
+                    <p class="h3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus dolore voluptas quas alias est tempora nulla atque. Dicta iusto nihil ex, perspiciatis commodi officia, sequi assumenda provident est, hic quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores error deleniti provident explicabo dolorum ducimus molestias libero eligendi labore, voluptatibus dicta nemo aliquam accusamus pariatur officia deserunt exercitationem velit repudiandae.</p>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique voluptates, consequatur provident quam dolores, velit natus molestiae nesciunt non, minima rerum reprehenderit. Laborum eaque recusandae deleniti incidunt officia adipisci ipsum?</p>
+                    <div class="button-holder"><a href="#" class="btn">Learn More...</a></div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table><!--End Main Table-->
+        <table class="outer-table-3">
+          <tr>
+            <td class="one-column">
+              <table width="100%">
+                <tr>
+                  <td class="footer">
+                    <img src="img/back3.jpg" alt="">
+                    <p class="footer">1000 Main Stree, NY New York 19000<br>Urban Decay 2018<br><a href="#">Unsubscribe</a></p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table><!--End Outer Table 3-->
+      </div> <!--End Wrapper-Inner-->
+    </div> <!--Wrapper End -->
+</body>
+</html>
