@@ -80,7 +80,6 @@ a {
 }
 .two-column .section {
     width: 100%;
-    max-width: 300px;
     display: inline-block;
     vertical-align: top;
 }
@@ -134,6 +133,12 @@ img.logo {
     background-size: cover;
     background-position-y: bottom;
 }
+.main-table {
+    width: 100%;
+    max-width: 610px;
+    margin: 0 auto;
+    border-radius: 6px;
+}
 .one-column .inner-td {
     font-size: 16px;
     line-height: 20px;
@@ -175,7 +180,6 @@ p.center {
 /*--- Start Two Column Image & Text Sections --*/
 .two-column img {
     width: 100%;
-    max-width: 280px;
     height: auto;
 }
 .two-column .text {
@@ -184,6 +188,7 @@ p.center {
 /*--- Start 3 Column Image & Text Section --*/
 .outer-table-2 {
   width: 100%;
+  margin-bottom: 22px;
   border-bottom: 4px solid #4c7579;
   border-top: 4px solid #4c7579;
   background: url(img/outter-table-2.jpg)center center no-repeat;
@@ -216,6 +221,10 @@ p.center {
 	font-size: 18px;
 	font-weight: 500;
 	line-height: 23px;
+}
+
+outer-table-2 tr{
+  height: ;
 }
 /*--- Start Two Column Article Section --*/
 .outer-table-3 {
@@ -349,12 +358,23 @@ img.img-responsive {
             </td>
           </tr>
         </table><!--End Banner Image-->
+
         <table class="outer-table-2">
           <tr>
             
           </tr>
         </table><!--End Outer Table 2-->
         <table class="main-table">
+            <tr>
+                <td class="one-column">
+                  <table width="100%">
+                    <tr>
+                      <td class="inner-bottom">
+                        <p class="h1">A spine tingling vacation... In Hell.</p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
           <tr>
             <td class="two-column">
               <div class="section">
@@ -364,15 +384,12 @@ img.img-responsive {
                         <table class="content">
                             <tr>
                               <td>
-                                <img src="img/lips2.jpg" alt="">
+                                <img src="img/small.jpg" alt="">
                               </td>
-                            </tr>
-                            <tr>
                               <td class="text">
-                                <p class="h3">Article Content</p>
-                                <p class="h3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, omnis eius. Nesciunt aperiam tempora, eos atque voluptatum molestiae praesentium.</p><br>
-                                <p class="h3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, omnis eius. Nesciunt aperiam tempora, eos atque voluptatum molestiae praesentium.</p><br>
-                              </td>
+                                  <p class="h1">An entirely new story.</p>
+                                  <p class="h3">Silent Hill 2 is an entirely new story. Set apart completely from the first Silent Hill.</p><br><p class="h3">Same town, a completely new, and terrifying experience!</p>
+                                </td>
                             </tr>
                           </table>
                     </td>
@@ -380,28 +397,43 @@ img.img-responsive {
                 </table>
               </div><!--End First Column-->
               <div class="section">
-                <table width="100%">
-                  <tr>
-                    <td class="inner-td">
-                        <table class="content">
-                            <tr>
-                              <td class="text">
-                                <p class="h3">Article Content</p>
-                                <p class="h3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, omnis eius. Nesciunt aperiam tempora, eos atque voluptatum molestiae praesentium.</p>
-                                <br>
-                                <p class="h3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, omnis eius. Nesciunt aperiam tempora, eos atque voluptatum molestiae praesentium.</p><br>
-                              </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                  <img src="img/lips.jpg" alt="">
-                                </td>
+                  <table width="100%">
+                    <tr>
+                      <td class="inner-td">
+                          <table class="content">
+                              <tr>
+                                <td class="text">
+                                    <p class="h3">A new form of evil.</p>
+                                    <p class="h3">Silent Hill 2 is an entirely new story. Set apart completely from the first Silent Hill.</p><br>
+                                  </td>
+                                  <td>
+                                      <img src="img/enemies.jpg" alt="">
+                                    </td>
                               </tr>
-                          </table>
-                    </td>
-                  </tr>
-                </table>
-              </div><!--End Second Column-->
+                            </table>
+                      </td>
+                    </tr>
+                  </table>
+                </div><!--End Second Column-->
+                <div class="section">
+                    <table width="100%">
+                      <tr>
+                        <td class="inner-td">
+                            <table class="content">
+                                <tr>
+                                  <td>
+                                    <img src="img/small.jpg" alt="">
+                                  </td>
+                                  <td class="text">
+                                      <p class="h3">An entirely new story.</p>
+                                      <p class="h3">Silent Hill 2 is an entirely new story. Set apart completely from the first Silent Hill.</p><br>
+                                    </td>
+                                </tr>
+                              </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </div><!--End Second Column-->
             </td>
           </tr>
           <tr>
