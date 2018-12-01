@@ -44,6 +44,9 @@ td {
 p {
     Margin:0;
 }
+p span{
+  color: #5f0e03;
+}
 .quote{
   background: linear-gradient(black, #ff000000, black),url(img/center2.jpg) center center no-repeat;
   background-size: contain;
@@ -77,6 +80,8 @@ a {
     text-align: center;
     font-size: 0;
     padding: 5px 0 10px 0;
+    background: linear-gradient(black, #00000080, transparent),url(img/info2.jpg)center no-repeat;
+    background-position-x: left;
 }
 .two-column .section {
     width: 100%;
@@ -179,8 +184,11 @@ p.center {
 }
 /*--- Start Two Column Image & Text Sections --*/
 .two-column img {
-    width: 100%;
+    width: 90%;
     height: auto;
+}
+.mid{
+  float: right;
 }
 .two-column .text {
     padding: 10px 0;
@@ -222,10 +230,6 @@ p.center {
 	font-weight: 500;
 	line-height: 23px;
 }
-
-outer-table-2 tr{
-  height: ;
-}
 /*--- Start Two Column Article Section --*/
 .outer-table-3 {
   width: 100%;
@@ -247,14 +251,12 @@ outer-table-2 tr{
     text-align: center!important;
     font-size: 25px!important;
     font-weight: 600;
-    line-height: 45px;
-    Margin: 12px 0 20px 0;
-    color: #4A4A4A;
+    color: #dad9da;
 }
 .inner-bottom p {
 	font-size: 16px;
 	line-height: 24px;
-	text-align: justify;
+  text-align: left;
 }
 /*--- Start Footer Section --*/
 .footer {
@@ -279,7 +281,7 @@ outer-table-2 tr{
 		max-width: 100%!important;
 	}
 	.two-column img {
-		width: 100%!important;
+		width: 90%!important;
 	}
 	.three-column img {
 		max-width: 60%!important;
@@ -316,11 +318,6 @@ img.logo {
 	max-width: 100% !important;
 	display: inline-block;
 	vertical-align: top;
-}
-
-.two-column img {
-	width: 100% !important;
- 	height: auto !important;
 }
 img.img-responsive {
     width:100% !important;
@@ -369,8 +366,8 @@ img.img-responsive {
                 <td class="one-column">
                   <table width="100%">
                     <tr>
-                      <td class="inner-bottom">
-                        <p class="h1">A spine tingling vacation... In Hell.</p>
+                      <td>
+                        <p class="h1">A spine tingling vacation... In <span>Hell.</span></p>
                       </td>
                     </tr>
                   </table>
@@ -386,9 +383,9 @@ img.img-responsive {
                               <td>
                                 <img src="img/small.jpg" alt="">
                               </td>
-                              <td class="text">
-                                  <p class="h1">An entirely new story.</p>
-                                  <p class="h3">Silent Hill 2 is an entirely new story. Set apart completely from the first Silent Hill.</p><br><p class="h3">Same town, a completely new, and terrifying experience!</p>
+                              <td class="inner-bottom">
+                                  <p class="h1">A terrifying new beginning.</p>
+                                  <p class="h3">Silent Hill 2 is an entirely new story. Set apart completely from the first Silent Hill.<br>Same town, new locations, and a new cast of characters.</p>
                                 </td>
                             </tr>
                           </table>
@@ -402,12 +399,12 @@ img.img-responsive {
                       <td class="inner-td">
                           <table class="content">
                               <tr>
-                                <td class="text">
-                                    <p class="h3">A new form of evil.</p>
+                                <td class="inner-bottom">
+                                    <p class="h1">A new form of evil.</p>
                                     <p class="h3">Silent Hill 2 is an entirely new story. Set apart completely from the first Silent Hill.</p><br>
                                   </td>
                                   <td>
-                                      <img src="img/enemies.jpg" alt="">
+                                      <img class="mid" src="img/enemies.jpg" alt="">
                                     </td>
                               </tr>
                             </table>
@@ -422,10 +419,10 @@ img.img-responsive {
                             <table class="content">
                                 <tr>
                                   <td>
-                                    <img src="img/small.jpg" alt="">
+                                    <img src="img/small3.jpg" alt="">
                                   </td>
-                                  <td class="text">
-                                      <p class="h3">An entirely new story.</p>
+                                  <td class="inner-bottom">
+                                      <p class="h1">An entirely new story.</p>
                                       <p class="h3">Silent Hill 2 is an entirely new story. Set apart completely from the first Silent Hill.</p><br>
                                     </td>
                                 </tr>
