@@ -51,6 +51,7 @@ p span{
   background: linear-gradient(black, #ff000000, black),url(img/center2.jpg) center center no-repeat;
   background-size: contain;
   background-position-x: right;
+  border-bottom: 3px solid #4e757a;
 }
 .quote p{
   text-align: center;
@@ -181,7 +182,7 @@ p.center {
     color: #FFF;
     text-decoration: none;
     padding: 9px 16px;
-    border-radius: 28px;
+    border-radius: 5px;
 }
 /*--- Start Two Column Image & Text Sections --*/
 .two-column img {
@@ -247,6 +248,13 @@ p.center {
 /*--- Start Bottom One Column Section --*/
 .inner-bottom {
 	padding: 22px;
+  position: relative;
+}
+.play{
+  position: absolute;
+  top: 180px;
+  left: 288px;
+  height: 55px;
 }
 .h1 {
     text-align: center!important;
@@ -258,6 +266,21 @@ p.center {
 	font-size: 16px;
 	line-height: 24px;
   text-align: left;
+}
+.buy-now{
+  background-color: #000000;
+  background: url(img/buynow.jpg)center center no-repeat;
+  height: 90px;
+  background-size: contain;
+}
+.buy-button-1{
+  display: inline;
+  margin-left: 30px;
+}
+.buy-button-2{
+  float: right;
+  display: inline;
+  margin-right: 30px;
 }
 /*--- Start Footer Section --*/
 .footer {
@@ -446,43 +469,46 @@ img.img-responsive {
           </tr>
           <tr>
             <td class="one-column">
-              <table width="100%">
                 <tr>
                   <td class="inner-bottom">
                     <p class="h1">Watch the Cinematic Trailer!</p>
                       <!-- video section -->
                       <div class="video-wrapper" style="display:none;">
-                      <video width="320" height="176" controls="controls"  poster="https://steemitimages.com/0x0/https://cdn.steemitimages.com/DQmexWdx4JoBbzqA3rmDARyrfzu7X6XS74BcnPfEgurBvV2/silent%20hill%202%20Maria.jpg" src="https://www.youtube.com/watch?v=9L0-VQSFz-k" >
+                      <video width="576" height="365" controls="controls"  poster="img/movieMaria.jpg" src="https://www.youtube.com/watch?v=9L0-VQSFz-k" >
                             <!-- fallback 1 -->
-                            <a href="https://steemitimages.com/0x0/https://cdn.steemitimages.com/DQmexWdx4JoBbzqA3rmDARyrfzu7X6XS74BcnPfEgurBvV2/silent%20hill%202%20Maria.jpg" ><img height="176" 
-                              src="https://www.youtube.com/watch?v=9L0-VQSFz-k" width="320" /></a>
+                            <a href="img/movieMaria.jpg" ><img height="365" 
+                              src="https://www.youtube.com/watch?v=9L0-VQSFz-k" width="576" /></a>
                       </video>
                       </div>
                       
                       <!-- fallback section -->
                       <div class="video-fallback">
                         <a href="https://www.youtube.com/watch?v=9L0-VQSFz-k" ><img height="365" 
-                          src="https://steemitimages.com/0x0/https://cdn.steemitimages.com/DQmexWdx4JoBbzqA3rmDARyrfzu7X6XS74BcnPfEgurBvV2/silent%20hill%202%20Maria.jpg" width="576" /></a>
+                          src="img/movieMaria.jpg" width="576" /></a>
                       </div>
-                    <br>
-                    <div class="button-holder"><a href="www.silenthill.com" class="btn">Learn More...</a></div>
-                  
+                      <img class="play" src="img/play.jpg"/>
                 </tr>
             </td>
           </tr>
         </table><!--End Main Table-->
-
+        <table class="outer-table 2">
+            <tbody>
+              <tr>
+              <td class="buy-now">
+                  <div class="buy-button-1"><a href="www.silenthill.com" class="btn">Buy Silent Hill</a></div>
+                
+                <div class="buy-button-2"><a href="www.silenthill.com" class="btn">Buy Silent Hill 2</a></div>
+            </td></tr>
+          </tbody>
+        </table><!--End Outter Table 2-->
         <table class="outer-table-3">
           <tr>
-            <td class="one-column">
-              <table width="100%">
-                <tr>
-                  <td class="footer">
-                    SILENT HILL <br>KONAMI 2018<br><span><a href="#">Unsubscribe</a></span>
-                  </td>
-                </tr>
-              </table>
-            </td>
+            <td class="footer">
+              SILENT HILL 
+              <br>KONAMI 2018<br>
+              <span>
+                <a href="#">Unsubscribe</a>
+              </span>
           </tr>
         </table><!--End Outer Table 3-->
         <table class="statement-table">
