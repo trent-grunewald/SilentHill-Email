@@ -170,13 +170,14 @@ p.center {
     Margin: 5% 2% 3% 0;
 }
 .button-holder {
-    float: right;
+    margin-left: auto;
+    margin-right: auto;
     Margin: 5% 0 3% 0;
 }
 .btn {
     font-size: 15px;
     font-weight: 600;
-    background: #81BAC6;
+    background: #4c7579;
     color: #FFF;
     text-decoration: none;
     padding: 9px 16px;
@@ -266,11 +267,16 @@ p.center {
   background-color: white;
   height: 200px;
   border-top: 3px solid #4c7579;
+  border-bottom: 3px solid #4c7579;
   background-position-x: left;
   text-align: center;
   color: #000;
   line-height: 30px;
   text-transform: uppercase;
+}
+.statement-table{
+  font-size: 10px;
+  margin: 20px;
 }
 /*--- Media Queries --*/
 @media screen and (max-width: 400px) {
@@ -401,7 +407,7 @@ img.img-responsive {
                               <tr>
                                 <td class="inner-bottom">
                                     <p class="h1">A new form of evil.</p>
-                                    <p class="h3">Silent Hill 2 is an entirely new story. Set apart completely from the first Silent Hill.</p><br>
+                                    <p class="h3">Silent Hill 2 Brings you an entirely new cast of characters and villains, all with their own personal story!</p><br>
                                   </td>
                                   <td>
                                       <img class="mid" src="img/enemies.jpg" alt="">
@@ -423,7 +429,7 @@ img.img-responsive {
                                   </td>
                                   <td class="inner-bottom">
                                       <p class="h1">An entirely new story.</p>
-                                      <p class="h3">Silent Hill 2 is an entirely new story. Set apart completely from the first Silent Hill.</p><br>
+                                      <p class="h3">The story in Silent hill 2 has many levels and paths to completion. Everything depends on your actions and decisions in the game.</p><br>
                                     </td>
                                 </tr>
                               </table>
@@ -438,17 +444,29 @@ img.img-responsive {
               <table width="100%">
                 <tr>
                   <td class="inner-bottom">
-                    <p class="h1">Loren Ipsum</p>
-                    <p class="h3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus dolore voluptas quas alias est tempora nulla atque. Dicta iusto nihil ex, perspiciatis commodi officia, sequi assumenda provident est, hic quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores error deleniti provident explicabo dolorum ducimus molestias libero eligendi labore, voluptatibus dicta nemo aliquam accusamus pariatur officia deserunt exercitationem velit repudiandae.</p>
+                    <p class="h1">Watch the Cinematic Trailer!</p>
+                      <!-- video section -->
+                      <div class="video-wrapper" style="display:none;">
+                      <video width="320" height="176" controls="controls"  poster="https://steemitimages.com/0x0/https://cdn.steemitimages.com/DQmexWdx4JoBbzqA3rmDARyrfzu7X6XS74BcnPfEgurBvV2/silent%20hill%202%20Maria.jpg" src="https://www.youtube.com/watch?v=9L0-VQSFz-k" >
+                            <!-- fallback 1 -->
+                            <a href="https://steemitimages.com/0x0/https://cdn.steemitimages.com/DQmexWdx4JoBbzqA3rmDARyrfzu7X6XS74BcnPfEgurBvV2/silent%20hill%202%20Maria.jpg" ><img height="176" 
+                              src="https://www.youtube.com/watch?v=9L0-VQSFz-k" width="320" /></a>
+                      </video>
+                      </div>
+                      
+                      <!-- fallback section -->
+                      <div class="video-fallback">
+                        <a href="https://www.youtube.com/watch?v=9L0-VQSFz-k" ><img height="365" 
+                          src="https://steemitimages.com/0x0/https://cdn.steemitimages.com/DQmexWdx4JoBbzqA3rmDARyrfzu7X6XS74BcnPfEgurBvV2/silent%20hill%202%20Maria.jpg" width="576" /></a>
+                      </div>
                     <br>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique voluptates, consequatur provident quam dolores, velit natus molestiae nesciunt non, minima rerum reprehenderit. Laborum eaque recusandae deleniti incidunt officia adipisci ipsum?</p>
-                    <div class="button-holder"><a href="#" class="btn">Learn More...</a></div>
-                  </td>
+                    <div class="button-holder"><a href="www.silenthill.com" class="btn">Learn More...</a></div>
+                  
                 </tr>
-              </table>
             </td>
           </tr>
         </table><!--End Main Table-->
+
         <table class="outer-table-3">
           <tr>
             <td class="one-column">
@@ -462,6 +480,24 @@ img.img-responsive {
             </td>
           </tr>
         </table><!--End Outer Table 3-->
+        <table class="statement-table">
+        <tr>
+            <td>
+                <p>Konami Holdings Corporation (to which we will refer as "Konami") is a company based in 9-7-2, Akasaka, Minato-ku, Tokyo, 107-8323 Japan.
+
+                    Konami and the Konami Group companies offer you various online services. The way in which we use your personal data when you use our services is very important for us. Konami and the Konami Group companies uses your data as described below.
+                    
+                    We process this personal data in accordance with the applicable EU and Member State regulations on data protection in particular, the General Data Protection Regulation No 2016/679 (the "GDPR").
+                    
+                    We may change, add to, or delete any part of this privacy notice from time to time. You can obtain the latest version of this privacy notice from [https://legal.konami.com/knm/privacy/en-eu/]
+                    
+                    1. Our use of your personal data
+                    2. Our sharing of your personal data with other companies
+                    3. Transfers of data to other countries
+                    4. Your rights and requests to Konami</p>
+            </td>
+          </tr>
+        </table><!--End Statement Table-->
       </div> <!--End Wrapper-Inner-->
     </div> <!--Wrapper End -->
 </body>
